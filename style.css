@@ -123,9 +123,10 @@ main{
 }
 
 .party-info{
-    background:linear-gradient(to bottom,rgba(255, 51, 51,1),white);
+    background:linear-gradient(to bottom,#ffc6b3,white);
     width:100%;
     padding:80px 0;
+    border-radius:15px;
 }
 
 .party-info > p{
@@ -137,7 +138,7 @@ main{
 }
 
 .party-info > p > span{
-    color:white;
+    color:#3f3f3f;
     font-weight:bold;
 }
 
@@ -155,4 +156,72 @@ main{
     padding:12px 25px;
     text-decoration:none;
     border-radius:5px;
+}
+
+.offer{
+    display:flex;
+    width:100%;
+    display:flex;
+    align-items:center;
+    margin:80px 0;
+}
+
+.offer > div{
+    width:33%;
+}
+
+.offer > .cell-1{
+    padding-right:50px;
+}
+
+.offer > .cell-1 > .title{
+    color:tomato;
+    font-size:22px;
+}
+
+.offer > .cell-1 > h3{
+    font-size:40px;
+    padding:15px 0;
+}
+
+.offer > .cell-1 > p{
+    width:100%;
+    color:black;
+    font-size:18px;
+}
+
+
+.offer > .cell-2{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:15px solid white;
+    outline:12px solid tomato;
+    border-radius:50%;
+}
+
+.offer > .cell-2 > img{
+    width:100%;
+}
+
+.offer > .cell-3{
+    padding-left:50px;
+    margin-left:auto;
+}
+
+.offer > .cell-3 > .title{
+    font-size:40px;
+    color:tomato;
+}
+
+.offer > .cell-3 > p{
+    width:100%;
+    color:black;
+    font-size:18px;
+    padding:15px 0;
+}
+
+.offer > .cell-3 > img{
+    width:30%;
+    margin-top:30px;
 }
