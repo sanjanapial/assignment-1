@@ -42,7 +42,7 @@
 /* Deals section starts here */
 
 main{
-    width:70%;
+    width:85%;
     margin:0 auto;
     display:flex;
     flex-direction:column;
@@ -77,13 +77,17 @@ main{
     margin-bottom:40px;
 }
 
+.deals > img{
+    width:70%;
+}
+
 /* Deals section ends here */
 
 /* Main section ends here */
 
 .party{
     width: 100%;
-    height:500px;
+    height:600px;
     margin:60px 0;
     background-image:url('resources/Vectorrr.png'),linear-gradient(to right, black , white);
     background-size:100% 100%;
@@ -257,17 +261,18 @@ main{
     font-size:18px;
     text-align:center;
     line-height:1.6;
+    padding-bottom:30px;
 }
 
 .holiday_sale > figure{
     width:100%;
     height:500px;
-    /* background-color:blue; */
     position:relative;
 }
 
 .holiday_sale > figure > img:nth-child(1){
     position:absolute;
+    top:0;
     right:0;
     height:70%;
     width:40%;
@@ -275,6 +280,7 @@ main{
 
 .holiday_sale > figure > img:nth-child(2){
     position:absolute;
+    left:0;
     bottom:0;
     height:30%;
     width:100%;
@@ -283,7 +289,7 @@ main{
 .holiday_sale > figure > img:nth-child(3){
     position:absolute;
     bottom:0;
-    height:90%;
+    height:80%;
 }
 
 .holiday_sale > figure > img:nth-child(4){
@@ -291,4 +297,107 @@ main{
     right:30%;
     top:20%;
     width:20%;
+}
+
+.portfolio{
+    width:100%;
+}
+
+.portfolio .title{
+    color:#F00;
+    text-transform:uppercase;
+    font-size:20px;
+}
+
+.portfolio .heading{
+    padding:10px 0;
+    text-transform:capitalize;
+    font-size:40px;
+    color:#070211;
+}
+
+.portfolio .caption{
+    line-height:1.6;
+    color:rgba(7, 2, 17, 0.60);
+    font-size:18px;
+}
+
+.portfolio > .product_container{
+    width:100%;
+    padding:30px 0;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+
+.portfolio > .product_container > img{
+    width:32%;
+    flex-shrink:0;
+    margin:10px 0;
+    border-radius:16px;
+}
+
+.newsletter{
+    background-color:rgba(255, 0, 0, 0.05);
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:50px 0;
+    margin:50px 0;
+}
+
+.newsletter .title{
+    font-size:38px;
+    font-weight:900;
+    padding:20px 0;
+    padding-bottom:10px;
+    text-transform:capitalize;
+}
+
+.newsletter .description{
+    font-size:18px;
+    font-weight:400;
+    text-align:center;
+    width:80%;
+    line-height:1.6;
+}
+
+.newsletter form{
+    width:50%;
+    display:flex;
+    justify-content:center;
+    margin:30px 0;
+}
+
+.newsletter > form > label{
+    width:100%;
+    border-radius:50px;
+    overflow:hidden;
+}
+
+.newsletter > form > label > input{
+    border:none;
+    outline:none;
+    box-shadow:none;
+    height:100%;
+    width:70%;
+    float:left;
+    padding:15px 20px;
+}
+
+.newsletter > form > label > input::placeholder{
+    color:rgba(7, 2, 17, 0.30);
+    font-size:18px;
+}
+
+.newsletter > form > label > button{
+    height:100%;
+    width:30%;
+    border:none;
+    float:right;
+    background-color:#F00;
+    color:white;
+    font-size:18px;
+    font-weight:600;
 }
